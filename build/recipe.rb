@@ -16,7 +16,7 @@ class Consulcli < FPM::Cookery::Recipe
 
   def build
     safesystem "mkdir -p #{builddir}/usr/local/bin/"
-    safesystem "cp -f #{builddir}/consul-cli-#{version}/consul-cli-#{version} #{builddir}/usr/local/bin/consul-cli"
+    safesystem "cp -f #{builddir}/consul-cli-#{version}_linux_amd64/consul-cli-#{version}_linux_amd64 #{builddir}/usr/local/bin/consul-cli"
     safesystem "chmod 755 #{builddir}/usr/local/bin/consul-cli"
   end
 
